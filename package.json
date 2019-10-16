@@ -1,5 +1,5 @@
 {
-  "proxy": "http://dataservice.accuweather.com/currentconditions/v1",
+  "proxy": "https://api.darksky.net/forecast",
   "name": "weathernow",
   "version": "0.1.0",
   "private": true,

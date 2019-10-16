@@ -33,10 +33,11 @@ body {
   color: aliceblue;
 }
 .current-container .current-temp{
-  font-size: 8em;
+  font-size: 7.5em;
   font-weight: bolder;
   text-align: center;
   color: #000000a6;
+  margin-bottom: 6px;
 }
 
 
