@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-antdesign-weatherApp/precache-manifest.664f203a1730edef8d7f3bedc2ee5bc3.js"
+  "/react-antdesign-weatherApp/precache-manifest.b4b0498acb3f6088d13cd4342ae9ad6b.js"
 );
 
 self.addEventListener('message', (event) => {
