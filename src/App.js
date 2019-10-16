@@ -30,7 +30,10 @@ function App() {
           .then(data => {
             setWeather(data.data);
           })
-          .catch(error => setError(error));
+          .catch(error => {
+            setError(error);
+            console.log(error);
+          });
       });
     } else {
       setError("Please Allow the location service first");
