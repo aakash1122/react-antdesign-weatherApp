@@ -5,12 +5,11 @@ import { css } from "@emotion/core";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const override = css`
-  display: absolute;
+  position: absolute;
   margin: 0 auto;
   border-color: red;
   height: 100px;
   width: 100px;
-  position: absolute;
   left: 50%;
   margin-left: -50px;
   top: 50%;

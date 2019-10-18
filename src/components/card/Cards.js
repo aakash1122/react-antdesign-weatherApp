@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Row, Col, Card } from "antd";
 import { Alert } from "antd";
 
@@ -15,7 +15,6 @@ const Cards = ({ data }) => {
           <InfoCard
             data={data.temperatureLow}
             title="Minimum Temperature"
-            color="#03a9f4"
             unit="&#8451;"
           />
         </Col>
@@ -26,19 +25,12 @@ const Cards = ({ data }) => {
             type="info"
             showIcon
           />
-          {/* <InfoCard
-            data={data.summary}
-            title="Current Temperature"
-            color="#03a9f4"
-            unit="&#8451;"
-          /> */}
         </Col>
         <Col span={7}>
           {" "}
           <InfoCard
             data={data.temperatureHigh}
             title="Maximum Temperature"
-            color="#03a9f4"
             unit="&#8451;"
           />
         </Col>
@@ -54,7 +46,6 @@ const Cards = ({ data }) => {
             data={new Date(data.sunriseTime * 1000).toLocaleTimeString()}
             title="Sunrise"
             img={sunrise}
-            color="#607d8b"
           />
         </Col>
         <Col span={11}>
@@ -62,7 +53,6 @@ const Cards = ({ data }) => {
             data={new Date(data.sunsetTime * 1000).toLocaleTimeString()}
             title="Sunset"
             img={sunset}
-            color="#607d8b"
           />
         </Col>
       </Row>
@@ -74,27 +64,16 @@ const Cards = ({ data }) => {
       >
         <Col span={7}>
           {" "}
-          <InfoCard
-            data={data.pressure}
-            unit="mBar"
-            title="Pressure"
-            color="#ff5252"
-          />
+          <InfoCard data={data.pressure} unit="mBar" title="Pressure" />
         </Col>
         <Col span={7}>
-          <InfoCard
-            data={data.humidity}
-            unit="%"
-            title="Humidity"
-            color="#ff5252"
-          />
+          <InfoCard data={data.humidity} unit="%" title="Humidity" />
         </Col>
         <Col span={7}>
           {" "}
           <InfoCard
             data={parseFloat(data.windSpeed * 3.6).toFixed(2)}
             title="Wind Speed"
-            color="#ff5252"
             unit="km/h"
           />
         </Col>

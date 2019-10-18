@@ -1,35 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card } from "antd";
 
+import { ThemeContext } from "../../context/ThemeContext";
+
 const InfoCard = ({ data, title, unit, img, color }) => {
+  const { themeObj } = useContext(ThemeContext);
+
   return (
     <div>
       <Card
         title={title}
-        bordered={true}
+        headStyle={{
+          color: themeObj.fg,
+          background: "transparent",
+          border: "none"
+        }}
         style={{
+          border: "none",
           width: "100%",
           margin: "auto",
           padding: 0,
-          background: color
-        }}
-        hoverable={true}
-        bodyStyle={{
-          backgroundImage: `url(${img})`,
+          background: themeObj.cb,
+          color: themeObj.fg,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          boxShadow: "10px 10px 15px 1px rgba(189,183,189,0.75)"
+          backgroundRepeat: "no-repeat"
         }}
+        hoverable={true}
       >
-        <h1
-          style={{
-            fontSize: 35,
-            textAlign: "center",
-            color: "#fff",
-            fontWeight: "bolder"
-          }}
-        >
+        <h1 className="card-description" style={{ color: themeObj.fg }}>
           {data} <span id="unit">{unit}</span>
         </h1>
       </Card>
