@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-antdesign-weatherapp/static/css/main.6f8ac3a0.chunk.css",
-    "main.js": "/react-antdesign-weatherapp/static/js/main.c88e0cbe.chunk.js",
-    "main.js.map": "/react-antdesign-weatherapp/static/js/main.c88e0cbe.chunk.js.map",
-    "runtime-main.js": "/react-antdesign-weatherapp/static/js/runtime-main.1425fab5.js",
-    "runtime-main.js.map": "/react-antdesign-weatherapp/static/js/runtime-main.1425fab5.js.map",
-    "static/css/2.802837ff.chunk.css": "/react-antdesign-weatherapp/static/css/2.802837ff.chunk.css",
-    "static/js/2.f0f0705d.chunk.js": "/react-antdesign-weatherapp/static/js/2.f0f0705d.chunk.js",
-    "static/js/2.f0f0705d.chunk.js.map": "/react-antdesign-weatherapp/static/js/2.f0f0705d.chunk.js.map",
-    "index.html": "/react-antdesign-weatherapp/index.html",
-    "precache-manifest.acc75826fb5e8e3916e1a0490dd70eb0.js": "/react-antdesign-weatherapp/precache-manifest.acc75826fb5e8e3916e1a0490dd70eb0.js",
-    "service-worker.js": "/react-antdesign-weatherapp/service-worker.js",
-    "static/css/2.802837ff.chunk.css.map": "/react-antdesign-weatherapp/static/css/2.802837ff.chunk.css.map",
-    "static/css/main.6f8ac3a0.chunk.css.map": "/react-antdesign-weatherapp/static/css/main.6f8ac3a0.chunk.css.map",
-    "static/media/sunrise.jpg": "/react-antdesign-weatherapp/static/media/sunrise.e95d7057.jpg",
-    "static/media/sunset.jpg": "/react-antdesign-weatherapp/static/media/sunset.397c20e3.jpg"
+    "main.css": "/react-antdesign-weatherApp/static/css/main.b2ae0447.chunk.css",
+    "main.js": "/react-antdesign-weatherApp/static/js/main.2ff8469e.chunk.js",
+    "main.js.map": "/react-antdesign-weatherApp/static/js/main.2ff8469e.chunk.js.map",
+    "runtime-main.js": "/react-antdesign-weatherApp/static/js/runtime-main.60872bf1.js",
+    "runtime-main.js.map": "/react-antdesign-weatherApp/static/js/runtime-main.60872bf1.js.map",
+    "static/css/2.802837ff.chunk.css": "/react-antdesign-weatherApp/static/css/2.802837ff.chunk.css",
+    "static/js/2.eebfb0b3.chunk.js": "/react-antdesign-weatherApp/static/js/2.eebfb0b3.chunk.js",
+    "static/js/2.eebfb0b3.chunk.js.map": "/react-antdesign-weatherApp/static/js/2.eebfb0b3.chunk.js.map",
+    "index.html": "/react-antdesign-weatherApp/index.html",
+    "precache-manifest.3987a08d735f29dc54c50879ebb5569f.js": "/react-antdesign-weatherApp/precache-manifest.3987a08d735f29dc54c50879ebb5569f.js",
+    "service-worker.js": "/react-antdesign-weatherApp/service-worker.js",
+    "static/css/2.802837ff.chunk.css.map": "/react-antdesign-weatherApp/static/css/2.802837ff.chunk.css.map",
+    "static/css/main.b2ae0447.chunk.css.map": "/react-antdesign-weatherApp/static/css/main.b2ae0447.chunk.css.map",
+    "static/media/sunrise.jpg": "/react-antdesign-weatherApp/static/media/sunrise.e95d7057.jpg",
+    "static/media/sunset.jpg": "/react-antdesign-weatherApp/static/media/sunset.397c20e3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1425fab5.js",
+    "static/js/runtime-main.60872bf1.js",
     "static/css/2.802837ff.chunk.css",
-    "static/js/2.f0f0705d.chunk.js",
-    "static/css/main.6f8ac3a0.chunk.css",
-    "static/js/main.c88e0cbe.chunk.js"
+    "static/js/2.eebfb0b3.chunk.js",
+    "static/css/main.b2ae0447.chunk.css",
+    "static/js/main.2ff8469e.chunk.js"
   ]
 }
