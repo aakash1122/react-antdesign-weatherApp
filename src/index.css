@@ -25,26 +25,24 @@ body {
   height: 100%;
 }
 
-#App-Wrapper{
+.App-Wrapper{
   min-height: 100vh;
   width: 100vw;
   height: auto;
 }
 
-.themeSlider{
+.theme-mode-container{
   position: absolute;
   top: 20px;
-  right: 30px
+  right: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 #unit{
   font-size: 30px !important;
   font-weight: bold;
 
-}
-
-.current-container{
-  /* background: linear-gradient(60deg, #B97866, #725569); */
 }
 
 .current-container .current-title{
@@ -66,9 +64,6 @@ body {
   font-size: large;
 }
 
-/* #cards{
-  color: #FFF !important;
-} */
 
 .ant-card-head-title{
   font-size: 20px;
@@ -201,6 +196,15 @@ body {
   #unit{
     font-size: 17px !important;
   }
+
+  .theme-mode-container{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
   .ant-tabs-nav.ant-tabs-nav-animated{
     font-size: smaller;
   }
@@ -217,7 +221,7 @@ body {
     font-size: 12px !important;
   }
   .ant-card-body h1{
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .ant-alert-description{
     font-size: 10px !important;
