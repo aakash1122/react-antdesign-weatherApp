@@ -2,18 +2,19 @@ import React, { createContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
-const ThemeContextProvider = props => {
+const ThemeContextProvider = (props) => {
   let [dark, setDark] = useState(false);
 
   let lightTheme = {
-    fg: "#2f3542",
-    bg: "#FFF",
-    cb: "rgba(248, 248, 255, 0.85) none repeat scroll 0% 0%"
+    fg: "#000",
+    bg: "#f6f6f6f2",
+    // cb: "rgba(248, 248, 255, 0.85) none repeat scroll 0% 0%",
+    cb: "#ffff",
   };
   let darkTheme = {
     fg: "#f1f2f6",
     bg: "#2f3542",
-    cb: "#34495e"
+    cb: "#34495e",
   };
 
   let themeObj = dark ? darkTheme : lightTheme;

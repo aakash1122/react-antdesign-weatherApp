@@ -5,29 +5,30 @@ import { getCurrentWeatherDataByGeo } from "./utils/accuWeather";
 import Spinner from "./components/spinner/Spinner";
 import { ThemeContext } from "./context/ThemeContext";
 import WeatherForecast from "./components/weather-forecast/WeatherForecast";
+import Axios from "axios";
 
 function App() {
-  let [error, setError] = useState("");
-  let [weather, setWeather] = useState(null);
-
+  const [weather, setWeather] = useState(null);
   const { themeObj } = useContext(ThemeContext);
 
   useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos => {
-        getCurrentWeatherDataByGeo(pos.coords.latitude, pos.coords.longitude)
-          .then(data => {
-            setWeather(data.data);
-          })
-          .catch(error => {
-            setError(error);
-            console.error(error);
-          });
-      });
-    } else {
-      setError("Please Allow the location service first");
-    }
+    (async function run() {
+      const location = await getLoc();
+      getweatherData(location);
+    })();
   }, []);
+
+  const getweatherData = async (position) => {
+    const data = await getCurrentWeatherDataByGeo(position);
+    setWeather(data);
+  };
+
+  const getLoc = async () => {
+    const res = await Axios.get(
+      "https://location.services.mozilla.com/v1/geolocate?key=test"
+    );
+    return res.data.location;
+  };
 
   return (
     <div

@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Row, Col, Card } from "antd";
+import React from "react";
+import { Row, Col } from "antd";
 import { Alert } from "antd";
 
 import sunrise from "../../img/sunrise.jpg";
